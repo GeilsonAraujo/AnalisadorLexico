@@ -1,0 +1,3 @@
+eu alterei o arquivo enquanto ele estava sendo lido
+agora quero saber 
+oque isso vai impacatra no codigo
