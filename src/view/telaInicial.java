@@ -82,7 +82,7 @@ public class telaInicial extends javax.swing.JFrame {
 			jTextArea2.setText("Syntax Erro: " + ex.getMessage());
 		}
 		catch (Exception ex) {
-			jTextArea2.setText("Generic Erro: ");
+			//jTextArea2.setText("Generic Erro: ");
                         //jTextArea2.setText(ex.getClass()+ ex.getMessage());
                         JOptionPane.showMessageDialog(null, "Erro na abertura dos arquivo: " + ex.getMessage());
 		}
