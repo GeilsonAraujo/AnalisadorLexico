@@ -67,12 +67,10 @@ public class telaInicial extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         jTextArea2.setText("");
-        try {
-            
-                IsiScanner sc = new IsiScanner("arquivoInicial.txt");
-                IsiParser  pa = new IsiParser(sc);          
-                pa.E();
-                
+        try {            
+            IsiScanner sc = new IsiScanner("arquivoInicial.txt");
+            IsiParser  pa = new IsiParser(sc);          
+            pa.E();                
         }
         catch (IsiLexicalException ex) {
                         jTextArea2.setText("Lexical Erro: " + ex.getMessage());			
