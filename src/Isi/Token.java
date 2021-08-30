@@ -8,7 +8,7 @@ public class Token {
 	public static final int TK_ASSIGN      = 4;
 	
 	public static final String TK_TEXT[] = {
-			"IDENTIFIER", "NUMBER", "OPERATOR", "PONCTUACTION", "ASSIGNMENT"
+			"IDENTIFICADOR", "NUMERO", "OPERADOR", "PONTUACAO", "ATRIBUICAO"
 	};
 	
 	private int    type;
@@ -46,6 +46,11 @@ public class Token {
 	public String toString() {
 		return "Token [type=" + type + ", text=" + text + "]";
 	}
+        
+        public String imprimi(){       
+            return "Tipo de token: " + TK_TEXT[type] + ", o texto é: " + text;
+            
+        }
 
 	public int getLine() {
 		return line;
