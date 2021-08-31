@@ -6,9 +6,13 @@ public class Token {
 	public static final int TK_OPERATOR    = 2;
 	public static final int TK_PONCTUATION = 3;
 	public static final int TK_ASSIGN      = 4;
+        public static final int TK_COMMENTLINE = 5;
+        public static final int TK_COMMENTBLOCK = 6;
+       
+        
 	
 	public static final String TK_TEXT[] = {
-			"IDENTIFICADOR", "NUMERO", "OPERADOR", "PONTUACAO", "ATRIBUICAO"
+			"IDENTIFICADOR", "NUMERO", "OPERADOR", "PONTUACAO", "ATRIBUICAO", "COMENTARIO EM LINHA" ,"BLOCO DE COMENTARIOS"
 	};
 	
 	private int    type;
@@ -48,7 +52,7 @@ public class Token {
 	}
         
         public String imprimi(){       
-            return "Tipo de token: " + TK_TEXT[type] + ", o texto é: " + text;
+            return "Linha " +line+ ": [ " + text + " ]  É um: " + TK_TEXT[type] ;
             
         }
 

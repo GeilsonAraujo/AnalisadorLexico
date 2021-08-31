@@ -18,7 +18,7 @@ public class IsiScanner {
 	
 	public IsiScanner(String filename) {
 		try {
-			line = 1;
+			line = 0;
 			column = 0;
 			String txtConteudo;
 			txtConteudo = new String(Files.readAllBytes(Paths.get(filename)),StandardCharsets.UTF_8);
@@ -207,7 +207,4 @@ public class IsiScanner {
 	    for (String k: esp){
 	    especiais.add(k);}
 	}
-	
-	
-	
 }

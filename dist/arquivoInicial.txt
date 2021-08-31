@@ -1,1 +1,11 @@
-console.log("teste");
+///
+//
+abc
+ultima lina
+AQUI
+
+VERIFICA AQUI
+
+2 + 2 ;
+
+ALI

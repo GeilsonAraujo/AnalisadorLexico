@@ -72,45 +72,17 @@ public class telaInicial extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         //jTextArea2.setText("");
         
-        try{
+       // try{
         IsiScanner2 arquivo = new IsiScanner2("ArquivoInicial.txt");
+        
         Token token = null;
         
         do{
             token = arquivo.nextToken();
             if(token != null){
                 jTextArea2.append((token).imprimi()+"\n");
-                System.out.println(token);
             }
         }while(token != null);
-        
-        }catch(IsiLexicalException ex){
-            jTextArea2.setText("Lexical Erro: " + ex.getMessage());
-        }catch(Exception ex){
-            jTextArea2.setText("Generic Erro: ");            
-        }
-   
-    
-//		}
-//       /* try {
-//            IsiScanner sc = new IsiScanner("arquivoInicial.txt");
-//            IsiParser  pa = new IsiParser(sc);
-//            pa.E();
-//        }
-//        catch (IsiLexicalException ex) {
-//                        
-//		}
-//
-//		catch (IsiSyntaxException ex) {
-//			jTextArea2.setText("Syntax Erro: " + ex.getMessage());
-//		}
-//		catch (Exception ex) {
-//			//jTextArea2.setText("Generic Erro: ");
-//                        //jTextArea2.setText(ex.getClass()+ ex.getMessage());
-//                        JOptionPane.showMessageDialog(null, "Erro na abertura dos arquivo: " + ex.getMessage());
-//		}*/
-        
-            
     }//GEN-LAST:event_jButton1ActionPerformed
     
 
