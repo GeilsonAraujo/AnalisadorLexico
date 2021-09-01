@@ -1,10 +1,12 @@
 package Isi;
 
 import exception.IsiLexicalException;
+import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import javax.swing.JOptionPane;
 
 public class IsiScanner2 {
 
@@ -28,8 +30,9 @@ public class IsiScanner2 {
             this.addEspeciais("if", "else", "class", "super", "var", "let", "instanceof", "typeof", "this", "import", "new", "extends", "yield", "void", "interface", "enum", "with", "delete", "debugger", "require", "const", "enum", "in", "for", "of", "while", "do", "switch", "case", "default", "break", "continue", "try", "catch", "throw", "finally", "function", "return", "true", "false", "null");
 
             //txtConteudo.toString();
-        } catch (Exception ex) {
-            ex.printStackTrace();
+        } catch (IOException ex) {
+            JOptionPane.showMessageDialog(null, "Arquivo Não encontrado: "+ ex.getMessage() +"\n Você pode criar um arquivo de texto ou usar o disponivel se preferir.\n O nome obrigatoriamente precisa ser: 'ArquivoInicial.txt");
+         
         }
     }
 
@@ -128,6 +131,7 @@ public class IsiScanner2 {
 					token.setColumn(column - term.length());
 					return token;
                     } else {
+                        JOptionPane.showMessageDialog(null, "Simbolo desconhecido");
                         throw new IsiLexicalException("Simbolo desconhecido");
                     }
                     break;
@@ -148,6 +152,7 @@ public class IsiScanner2 {
 					token.setColumn(column - term.length());
 					return token;
                     } else {
+                        JOptionPane.showMessageDialog(null, "Identificador Mal formado, arquivo possui erro");
                         throw new IsiLexicalException("Identificador mal formado");
                     }
                     break;
@@ -167,15 +172,10 @@ public class IsiScanner2 {
 					token.setColumn(column - term.length());
 					return token;
 				}
-				else {
+				else {  
+                                        JOptionPane.showMessageDialog(null, "Numero mal formado Arquivo possui erro");
 					throw new IsiLexicalException("Unrecognized Number");
 				}
-//                case 2:
-//                    back();
-//                    token = new Token();
-//                    token.setType(Token.TK_IDENTIFIER);
-//                    token.setText(term);
-//                    return token;
                     case 3:
                         if (isDigit(currenteChar)) {
                             estado = 3;
@@ -183,6 +183,7 @@ public class IsiScanner2 {
                         } else if (!isChar(currenteChar)) {
                             estado = 4;
                         } else {
+                            JOptionPane.showMessageDialog(null, "Numero mal formado, arquivo possui erro lexico");
                             throw new IsiLexicalException("numero mal formado");
                         }
                         break;

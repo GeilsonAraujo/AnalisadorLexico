@@ -1,11 +1,9 @@
-///
-//
-abc
-ultima lina
-AQUI
+/* aQUI SERIA UM COMENTARIO EM BLOCO */ 
+// depois de duas barras
+abc ultima lina AQUI
 
-VERIFICA AQUI
+2 == 2 
 
-2 + 2 ;
+2 + 2 
 
 ALI

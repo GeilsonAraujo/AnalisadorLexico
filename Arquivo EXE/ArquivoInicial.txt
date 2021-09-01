@@ -14,4 +14,4 @@ if(numFloat >= numInt) {
     console.log('Teste "string"');
 } esle { // Erro proposital
     console.log("Barra invertida \\ \" \'");
-}
+}s
