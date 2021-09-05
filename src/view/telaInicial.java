@@ -1,14 +1,7 @@
 package view;
 
-import exception.IsiLexicalException;
-import Isi.IsiParser;
-import Isi.IsiScanner;
-import Isi.IsiScanner2;
+import Isi.IsiScanner3;
 import Isi.Token;
-import exception.IsiSyntaxException;
-import java.io.BufferedReader;
-import java.io.FileReader;
-import javax.swing.JOptionPane;
 
 public class telaInicial extends javax.swing.JFrame {
 
@@ -73,7 +66,7 @@ public class telaInicial extends javax.swing.JFrame {
         jTextArea2.setText("");
         
        // try{
-        IsiScanner2 arquivo = new IsiScanner2("ArquivoInicial.txt");
+        IsiScanner3 arquivo = new IsiScanner3("ArquivoInicial.txt");
         
         Token token = null;
         

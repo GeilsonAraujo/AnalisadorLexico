@@ -1,9 +1,4 @@
-/* aQUI SERIA UM COMENTARIO EM BLOCO */ 
-// depois de duas barras
-abc ultima lina AQUI
-
-2 == 2 
-
-2 + 2 
-
-ALI
+//Comentario em linha
+/*comentario em bloco*/
+abc
+;
