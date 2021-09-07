@@ -1,4 +1,0 @@
-//Comentario em linha
-/*comentario em bloco*/
-abc
-;

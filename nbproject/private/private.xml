@@ -5,8 +5,9 @@
         <group>
             <file>file:/C:/Users/Santos/Documents/NetBeansProjects/AnalisadorLexico/src/view/telaInicial.java</file>
             <file>file:/C:/Users/Santos/Documents/NetBeansProjects/AnalisadorLexico/src/Isi/Main.java</file>
+            <file>file:/C:/Users/Santos/Documents/NetBeansProjects/AnalisadorLexico/src/Isi/IsiScanner3.java</file>
             <file>file:/C:/Users/Santos/Documents/NetBeansProjects/AnalisadorLexico/src/Isi/Token.java</file>
-            <file>file:/C:/Users/Santos/Documents/NetBeansProjects/AnalisadorLexico/src/Isi/IsiScanner2.java</file>
+            <file>file:/C:/Users/Santos/Documents/NetBeansProjects/AnalisadorLexico/src/Isi/IsiScanner.java</file>
         </group>
     </open-files>
 </project-private>

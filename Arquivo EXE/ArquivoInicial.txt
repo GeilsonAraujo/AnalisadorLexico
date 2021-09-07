@@ -1,17 +1,15 @@
-/* Analisador Léxico */
+// linha de comentario
 
-// Teste Code 1
-var and = true && !teste || false;
+/* Comentario em bloco */
 
-let numInt = 1000000000 - 55.99;
+variavel1 = 3;
 
-numInt++;
-numInt -= 10;
+variavel2 ;
 
-if(numFloat >= numInt) {
-    console.log("Teste 'string'");
-} else if(numFloat == numInt) {
-    console.log('Teste "string"');
-} esle { // Erro proposital
-    console.log("Barra invertida \\ \" \'");
-}s
+if variavel1 == 1 & variavel2 == ;
+
+variavel1 = 3+2;
+
+else
+
+2/3

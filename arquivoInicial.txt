@@ -1,4 +1,15 @@
-//Comentario em linha
-/*comentario em bloco*/
-abc
-;
+// linha de comentario
+
+/* Comentario em bloco */
+
+variavel1 = 3;
+
+variavel2 ;
+
+if variavel1 == 1 & variavel2 == ;
+
+variavel1 = 3+2;
+
+else
+
+2/3

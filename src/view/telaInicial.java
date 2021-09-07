@@ -1,6 +1,6 @@
 package view;
 
-import Isi.IsiScanner3;
+import Isi.IsiScanner3_1;
 import Isi.Token;
 
 public class telaInicial extends javax.swing.JFrame {
@@ -8,7 +8,7 @@ public class telaInicial extends javax.swing.JFrame {
     public telaInicial() {
         initComponents();
     }
-    
+
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -64,20 +64,17 @@ public class telaInicial extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         jTextArea2.setText("");
-        
-       // try{
-        IsiScanner3 arquivo = new IsiScanner3("ArquivoInicial.txt");
-        
+        IsiScanner3_1 arquivo = new IsiScanner3_1("ArquivoInicial.txt");
         Token token = null;
-        
-        do{
+
+        do {
             token = arquivo.nextToken();
-            if(token != null){
-                jTextArea2.append((token).imprimi()+"\n");
+            if (token != null) {
+                jTextArea2.append((token).imprimi() + "\n");
             }
-        }while(token != null);
+        } while (token != null);
     }//GEN-LAST:event_jButton1ActionPerformed
-    
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
